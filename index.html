@@ -1,31 +1,58 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>HTML und CSS</title>
-    <meta charset="UTF-8"
+    <title>Tasteful</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1><p style="text-align: center">Die Basics zu HTML und CSS</p></h1>
-    <p>Das hier ist eine einfache Website, die HTML und CSS benutzt. Scroll weiter um mehr zu erfahren!
-        Wir fangen mit den Basics an, es gibt auf jeden Fall wichtige Tags, die ihr für euere Website braucht
-    </p>
-    
-<h2>Auflistung</h2>
-    <ul>
-        <li>Doctype html</li> <!--Nr 1--> 
-        <dd>gibt den Dokumenttyp HTML an</dd>
-        <li>head</li> <!--Nr 2-->
-        <dd>beeinhaltet alle Elemente/Informationen, die das Dokument beschreibt</dd>
-        <li>title</li> <!--Nr 3-->
-       <dd>definiert ein Titel für dein Dokument</dd>
-       <li>body</li> <!--Nr 4-->
-       <dd>Sichtbarer Hauptteil deiner Website</dd>
-    </ul>
+    <nav class="navbar">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Menü.html">Menü</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+>
+        </ul>
+    </nav>
 
-<p>In euer Body kommt alles rein, wie zum Beispiel: Bilder</p>
-    <h2>Bild</h2>
-    <center><img src="https://ih1.redbubble.net/image.2464906586.5278/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="image.2464906586.5278/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"></center>
-    <p>Man kann auch die Größe des Bildes anpassen oder sogar auch GIFs hinzufügen</p>
-    <h2>Angepasstes Bild und GIF</h2>
-    <img src="https://de.meming.world/images/de/thumb/1/13/Thumbs_Up_Crying_Cat.jpg/300px-Thumbs_Up_Crying_Cat.jpg" height="333px" width="333px" alt="300px-Thumbs_Up_Crying_Cat.jpg">
-    <img style="text-align: center"<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZW05OGF4cWhkMzZlejE0ZXZ1MzBzZWV5a3R1eGc4Z2tzYXpwNXlvOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SvP3FgHsFVm7zwMdH6/giphy.gif" height="333px" width="333px" alt="gif image"></img>
+    <div class="banner">
+        <h1 style="color: antiquewhite;"> Tasteful - Tasty & Delicious </h1>
+        <i><p style="color: rgb(220, 211, 198);"> ipsum dolor sit amet, consectetur adipisicing elit. Omnis, est voluptas. Debitis, esse. Temporibus voluptatum veritatis dolorum, magni deleniti quam, porro sint eius itaque ullam ex corporis, amet beatae aspernatur.</p></i>
+    </div>
+
+    <div class="menü">
+        <ul>
+            <li>
+                <span><a href="Menü.html"><img src="Salami Pizza.png" width="300px" height="300px"/></a></span>
+                <p>Salami Pizza</p>
+                <a href="Menü.html">Sieh Mehr...</a>
+            </li>
+            <li>
+                <span><a href="Menü.html"><img src="Burger.png" width="300px" height="300px"/></a></span>
+                <p>Cheese Burger</p>
+                <a href="Menü.html">Sieh Mehr...</a>
+            </li>
+            <li>
+                <span><a href="Menü.html"><img src="Chilli Cheese Fries.png" width="300px" height="300px"/></a></span>
+                <p>Chilli Cheese Fries</p>
+                <a href="Menü.html">Sieh Mehr...</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="wichtig">
+        <h1 style="color: antiquewhite;">Beliebte Gerichte!</h1>
+    </div>
+
+    <div class="reviews">
+        <h3 style="color: darkred;"> Rezensionen</h3>
+    </div>
+
+    <div class="footer">
+        <h5 style="color: antiquewhite;"> Park Strasse 81623 Fallout </h5>
+        <h5 style="color: antiquewhite;"> 023832 7372519 </h5>
+        <h5 style="color: antiquewhite;"> tasteful@gmail.com </h5>
+        <i><p style="color: rgb(220, 211, 198);">alle Rechte vorbehalten</p></i>
+</body>
+</html>
