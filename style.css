@@ -1,28 +1,28 @@
-body {
+body { /*Allgemeine Schrift*/
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-h1 {
+h1 { /*Navbar*/
     font-family: Cambria, serif;
-    color: rgb(0, 0, 0);
-    text-align: left; /* Default alignment for all h1 elements */
+    color: rgb(0, 0, 0); 
+    text-align: left; /*Ausrichtung für alle h1 Elemente*/
 }
 
-.navbar ul {
+.navbar ul { 
     list-style-type: none;
     background-color: rgba(239, 236, 236, 0.756);
     padding: 0;
     margin: 0;
     overflow: hidden;
-    text-align: right; /* Ensure ul is centered */
+    text-align: right; /*zentriert ul*/
 }
 
 .navbar li {
-    display: inline-block; /* Ensure li elements are inline */
+    display: inline-block; /*li Elemente sind in einer Linie im Text */
 }
 
-.navbar a {
+.navbar a { 
     color: rgb(60, 39, 39);
     text-decoration: none;
     padding: 10px;
@@ -34,28 +34,28 @@ h1 {
     background-color: hsl(0, 12%, 84%);
 }
 
-.banner {
+.banner { /*Hintergrund Banner + Text*/
     padding: 15px;
     background: rgb(57, 57, 57);
     font-size: 20px;
-    text-align: center; /* Center content inside banner */
+    text-align: center; /*zentriert Text im Banner */
 }
 
 .menü {
     display: block;
-    width: max-content; /* Ensures the div only takes up as much width as its content */
-    margin: 0 auto; /* Centers the div horizontally */
+    width: max-content; /* div verbraucht nur so viel BReite wie ihre Inhalt */
+    margin: 0 auto; /* zentriert div waagerecht*/
 }
 
-.menü ul {
+.menü ul { 
     list-style: none;
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    text-align: center; /* Center list items */
+    padding: 0; /* entfernt normales padding */
+    margin: 0; /* entfernt normale margin */
+    text-align: center; /* zentriert liste */
 }
 
-.menü ul li {
-    display: inline-block; /* Use inline-block to keep li elements inline but allow padding and margins */
+.menü ul li { /* lässt Elemente inline bleiben und erlaubt margin und padding*/
+    display: inline-block; 
     list-style: none;
     padding: 20px;
     margin: 15px;
@@ -63,7 +63,7 @@ h1 {
     background-color: #e6e4e4;
 }
 
-.menü ul li a {
+.menü ul li a { /*Übergang*/
     display: block;
     opacity: 0.75;
     -webkit-transition: all 0.3s linear;
@@ -71,7 +71,7 @@ h1 {
     transition: all 0.3s linear;
 }
 
-.menü ul li a:hover {
+.menü ul li a:hover { /*Übergang*/
     opacity: 1.0;
 }
 
@@ -79,24 +79,107 @@ h1 {
     border: 6px solid #ffffff;
 }
 
-.wichtig{
+.wichtig{ /*Hintergrund beliebte Gerichte*/
     padding: 5px;
     background-color:rgb(57, 57, 57);
     font-size: 18px;
 }
 
-h1{
+h1{ /*Beliebte Gerichte*/
     text-align: center;
 }
 
-h3{
+h3{ /*Reviews*/
     margin: 20px;
     text-align: center;
 }
+
+.review { /*Bewertung*/
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.review h2 {
+    margin-top: 0;
+}
+.review p { /*Text Review*/
+    margin: 5px 0;
+}
+.rating { /*Farbe Sterne*/
+    color: #FFD700;
+} 
 
 .footer{ /*ganz unten*/
     padding: 10px;
     background: rgb(57, 57, 57);
     font-size: 20px;
     text-align: center; /* Center content inside banner */
+}
+
+/* alles Home HTML Document*/
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Anschrift {
+    text-align: center;
+}
+
+.Öffnungszeiten {
+    flex: 1;
+    margin-left: 20px; /* Abstand zwischen Anschrift und Öffnungszeiten */
+    list-style: none;
+    float: right;
+    width: 50%;
+}
+
+.Öffnungszeiten ul { /*zentriert ungeordnete Liste Mit Überschrift*/
+    padding: 0; 
+}
+
+
+.Öffnungszeiten ul li {
+    display: block; 
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+/*Alles Kontakt*/
+
+ table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+    font-size: 20px;
+}
+td {
+    font-size: 18px;
+}
+.beliebt {
+    background-color: rgb(190, 190, 190);
+}
+.Pizza{
+    background-color: rgb(215, 215, 215);
+}
+.Burger {
+    background-color: rgb(215, 215, 215);
+}
+.Fingerfood {
+    background-color: rgb(215, 215, 215);
+}
+
+.Getränke {
+    background-color: rgb(215, 215, 215);
 }
