@@ -5,29 +5,26 @@ body { /*Allgemeine Schrift*/
 
 h1 { /*Navbar*/
     font-family: Cambria, serif;
-    color: rgb(0, 0, 0); 
-    text-align: left; /*Ausrichtung für alle h1 Elemente*/
+    color: rgb(0, 0, 0);
 }
 
-.navbar ul { 
+.navbar ul {
     list-style-type: none;
     background-color: rgba(239, 236, 236, 0.756);
     padding: 0;
-    margin: 0;
-    overflow: hidden;
+    margin: 0; /*geht bis zum Rand*/
     text-align: right; /*zentriert ul*/
 }
 
 .navbar li {
-    display: inline-block; /*li Elemente sind in einer Linie im Text */
+    display: inline-block; /*li Elemente sind in einer Linie im Text und nicht untereinander*/
 }
 
-.navbar a { 
+.navbar a {
     color: rgb(60, 39, 39);
-    text-decoration: none;
+    text-decoration: none; /*entfernt Unterstrich*/
     padding: 10px;
-    display: block;
-    text-align: center;
+    display: block; /*Verbesserung Navbar Sicht*/
 }
 
 .navbar a:hover {
@@ -42,21 +39,19 @@ h1 { /*Navbar*/
 }
 
 .menü {
-    display: block;
     width: max-content; /* div verbraucht nur so viel BReite wie ihre Inhalt */
     margin: 0 auto; /* zentriert div waagerecht*/
 }
 
-.menü ul { 
-    list-style: none;
+.menü ul {
     padding: 0; /* entfernt normales padding */
     margin: 0; /* entfernt normale margin */
     text-align: center; /* zentriert liste */
 }
 
 .menü ul li { /* lässt Elemente inline bleiben und erlaubt margin und padding*/
-    display: inline-block; 
-    list-style: none;
+    display: inline-block;
+
     padding: 20px;
     margin: 15px;
     text-align: center;
@@ -66,12 +61,10 @@ h1 { /*Navbar*/
 .menü ul li a { /*Übergang*/
     display: block;
     opacity: 0.75;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 
-.menü ul li a:hover { /*Übergang*/
+.menü ul li a:hover { /*Bild sichtbarer, wenn Curser drauf ist*/
     opacity: 1.0;
 }
 
@@ -108,20 +101,19 @@ h3{ /*Reviews*/
 }
 .rating { /*Farbe Sterne*/
     color: #FFD700;
-} 
+}
 
 .footer{ /*ganz unten*/
     padding: 10px;
     background: rgb(57, 57, 57);
     font-size: 20px;
-    text-align: center; /* Center content inside banner */
+    text-align: center; /* Zentriet */
 }
 
 /* alles Home HTML Document*/
 
 .flex-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 .Anschrift {
@@ -131,19 +123,16 @@ h3{ /*Reviews*/
 .Öffnungszeiten {
     flex: 1;
     margin-left: 20px; /* Abstand zwischen Anschrift und Öffnungszeiten */
-    list-style: none;
-    float: right;
-    width: 50%;
 }
 
 .Öffnungszeiten ul { /*zentriert ungeordnete Liste Mit Überschrift*/
-    padding: 0; 
+    padding: 0;
 }
 
 
 .Öffnungszeiten ul li {
-    display: block; 
-    list-style: none;
+    display: block;
+    list-style: none; /*entfernt Punkte*/
     padding: 10px;
     margin: 10px;
     text-align: center;
@@ -153,7 +142,7 @@ h3{ /*Reviews*/
 
  table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse /*Zellränder zu einem Rand*/
 }
 th, td {
     padding: 10px;
@@ -161,25 +150,28 @@ th, td {
     border-bottom: 1px solid #ddd;
 }
 th {
-    background-color: #f2f2f2;
+    background-color: #f1eeee;
     font-size: 20px;
 }
 td {
     font-size: 18px;
 }
 .beliebt {
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(192, 176, 176);
 }
 .Pizza{
-    background-color: rgb(215, 215, 215);
+    background-color: rgb(188, 188, 188);
 }
 .Burger {
-    background-color: rgb(215, 215, 215);
+    background-color: rgb(188, 188, 188);
+
 }
 .Fingerfood {
-    background-color: rgb(215, 215, 215);
+    background-color: rgb(188, 188, 188);
+
 }
 
 .Getränke {
-    background-color: rgb(215, 215, 215);
+    background-color: rgb(188, 188, 188);
+
 }
